@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-function that returns a list of lists of integers
-"""
+"""function that returns a list of lists of integers"""
 
 
 def pascal_triangle(n):
@@ -14,6 +12,7 @@ def pascal_triangle(n):
     pascal_triangle = [0] * n
 
     for i in range(n):
+        # define a row
         new_row = [0] * (i+1)
         new_row[0] = 1
         new_row[len(new_row) - 1] = 1
@@ -27,4 +26,3 @@ def pascal_triangle(n):
         pascal_triangle[i] = new_row
 
     return pascal_triangle
-
