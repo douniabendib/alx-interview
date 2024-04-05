@@ -7,7 +7,7 @@
 def validUTF8(data):
     """
     method that determines if a given
-    data set represents a 
+    data set represents a
     valid UTF-8 encoding.
     """
     byte_count = 0
@@ -23,7 +23,7 @@ def validUTF8(data):
             elif i >> 7 == 0b1:
                 return False
         else:
-             if i >> 6 != 0b10:
-                 return False
-             byte_count -= 1
+            if i >> 6 != 0b10:
+                return False
+            byte_count -= 1
     return byte_count == 0
